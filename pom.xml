@@ -49,7 +49,7 @@
                             <argLine>-Dfile.encoding=UTF-8</argLine>
                             <useFile>false</useFile>
                             <includes>
-                                <include>**/*AT.class</include>
+                                <include>**/*ATTest.class</include>
                             </includes>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
