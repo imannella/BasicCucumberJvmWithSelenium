@@ -8,6 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 		features = "target/test-classes/cucumber/features/", 
 		tags = {"@autocorrect"}, 
-		plugin = {"pretty", "html:target/cucumber-report/autocorrect"})
-public class AutoCorrectAT {
+		plugin = {"pretty", 
+				  "html:target/cucumber-report/autocorrect",
+				  "junit:target/cucumber-report/autocorrect/cucumber.xml",
+				  "json:target/cucumber-report/autocorrect/cucumber.json"})
+public class AutoCorrectATTest {
 }
