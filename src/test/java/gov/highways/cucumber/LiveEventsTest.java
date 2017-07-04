@@ -7,10 +7,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "target/test-classes/cucumber/features/", 
-		tags = {"@search"}, 
+		tags = {"@severe-disruption"}, 
 		plugin = {"pretty", 
-				  "html:target/cucumber-report/autocorrect",
-				  "junit:target/cucumber-report/autocorrect/cucumber.xml",
-				  "json:target/cucumber-report/autocorrect/cucumber.json"})
-public class SearchATTest {
+				  "html:target/cucumber-report/liveEvents",
+				  "junit:target/cucumber-report/liveEvents/cucumber.xml",
+				  "json:target/cucumber-report/liveEvents/cucumber.json"},
+		monochrome = true)
+public class LiveEventsTest {
 }
